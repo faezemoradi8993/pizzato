@@ -1,0 +1,56 @@
+$borderColor   :rgba(255, 255, 255, 0.3);
+$primeryColor  :white;
+$seconderyColor:#f9622B;
+
+
+* {
+    margin         : 0;
+    padding        : 0;
+    box-sizing     : border-box;
+    text-decoration: none;
+}
+
+body {
+    direction  : rtl;
+    font-family: 'iransans';
+    font-size  : 14px;
+}
+
+@mixin flex-aj($a, $b) {
+    display        : flex;
+    align-items    : $a;
+    justify-content: $b;
+
+}
+
+.col2 {
+    width: 16.66%;
+}
+
+.col3 {
+    width: 25%;
+}
+
+.col4 {
+    width: 33.33%;
+}
+
+.col6 {
+    width: 50%;
+}
+
+.container {
+    width : 90%;
+    margin: 0 auto;
+}
+
+.line {
+    width        : 100%;
+    border       : none;
+    margin       : 10px 0;
+    border-bottom: 0.2px solid $borderColor;
+}
+
+.b-b-0 {
+    border-bottom: none !important;
+}

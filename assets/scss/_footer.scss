@@ -1,0 +1,133 @@
+footer {
+    background-image : url('../images/footer-bg.jpg');
+    background-repeat: no-repeat;
+    background-size  : cover;
+    color            : $primeryColor;
+
+    .footerMain {
+        @include flex-aj(center, space-between);
+        padding: 100px 0 50px 0;
+
+
+
+
+        .leftFooter {
+            @include flex-aj(center, flex-end);
+            align-self    : flex-start;
+            flex-direction: column;
+
+
+            img {
+                width : 130px;
+                height: 180x;
+            }
+
+            p {
+                padding: 12px 0;
+            }
+
+            .appMarket {
+                @include flex-aj(center, center);
+
+
+                a {
+
+                    img {
+                        width : 30px;
+                        height: 30px;
+
+                    }
+                }
+            }
+        }
+
+        .rightFooter {
+            @include flex-aj(flex-start, flex-start);
+            align-self    : flex-start;
+            flex-direction: column;
+            font-size     : 23px;
+
+
+
+            ul {
+                width: 100%;
+
+                li {
+                    display      : block;
+                    border-bottom: 0.2px solid $borderColor;
+
+                    a {
+                        font-size  : 16px;
+                        font-weight: 400px;
+                        color      : $primeryColor;
+
+                        &:hover {
+                            color: $seconderyColor;
+                        }
+
+                    }
+
+                }
+            }
+
+            .insta {
+                font-size            : 14px;
+                margin-top           : 30px;
+                padding              : 11px 20px;
+                border               : none;
+                border-radius        : 40px;
+                -webkit-border-radius: 40px;
+                -moz-border-radius   : 40px;
+                -ms-border-radius    : 40px;
+                -o-border-radius     : 40px;
+                background           : linear-gradient(90deg, #fe953f 9%, #ec4f6e 38%, #e5407c 61%, #6433c3 100%);
+                color                : $primeryColor;
+
+            }
+
+        }
+
+        .centerFooter {
+            @include flex-aj(flex-start, flex-start);
+            flex-direction: column;
+            align-self    : flex-start;
+            width         : 60%;
+            padding       : 0 40px;
+
+
+            p {
+                line-height: 30px;
+                text-align : justify;
+
+                span {
+                    a {
+                        color: $seconderyColor;
+
+                        &:hover {
+                            color: #ffd500;
+                        }
+                    }
+                }
+
+            }
+
+        }
+    }
+
+    .copyRight {
+        @include flex-aj(center, center);
+        padding: 0 0 70px 0;
+
+        p {
+            span {
+                a {
+                    color: $seconderyColor;
+
+                    &:hover {
+                        color: #ffd500;
+                    }
+                }
+            }
+        }
+    }
+}
