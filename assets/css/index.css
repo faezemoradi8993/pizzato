@@ -28,6 +28,7 @@ body {
 }
 
 .container {
+  max-width: 1100px;
   width: 90%;
   margin: 0 auto;
 }
@@ -51,17 +52,163 @@ body {
   /* chrome firefox opera Safari, Android, iOS 4.2+*/
 }
 
+header {
+  background-image: url("../images/Home-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 45px 0;
+}
+
+header nav .menu ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+header nav .menu ul li {
+  list-style: none;
+  margin-left: 25px;
+}
+
+header nav .menu ul li a {
+  color: #efefef;
+  display: inline-block;
+}
+
+header nav .menu ul li a.active, header nav .menu ul li a:hover {
+  color: #ffd500;
+}
+
+header nav .iconBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+header nav .iconBar a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+header nav .iconBar a:not(:last-child).active, header nav .iconBar a:not(:last-child):hover {
+  color: #ffd500;
+}
+
+header nav .iconBar a i {
+  font-size: 18px;
+}
+
+header nav .iconBar a.basket {
+  background-color: rgba(239, 239, 239, 0.7);
+  color: #1f1c1c;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+header nav .iconBar a.basket:hover {
+  color: #1f1c1c;
+}
+
+header nav .iconBar a.basket i {
+  padding: 7px 17px;
+}
+
+header .heroHeader {
+  width: 100%;
+}
+
+header .heroHeader .heroHeaderContainer {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+header .heroHeader .heroHeaderContainer nav {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+header .heroHeader .heroHeaderContainer nav img {
+  margin-bottom: 70px;
+  width: 125px;
+  height: 135px;
+}
+
+header .heroHeader .heroHeaderContainer nav .items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+header .heroHeader .heroHeaderContainer nav .items a {
+  margin-bottom: 15px;
+  padding: 7px auto;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  color: #efefef;
+  background-color: #F9622B;
+  text-align: center;
+  font-size: 14px;
+  word-break: break-all;
+  min-width: 100%;
+}
+
+header .heroHeader .heroHeaderContainer .banner {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/home-slider-pizza-2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0 auto;
+}
+
+header .heroHeader .heroHeaderContainer .banner img {
+  width: 100%;
+}
+
 footer {
   background-image: url("../images/footer-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  color: white;
+  color: #efefef;
 }
 
 footer .footerMain {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: row;
   padding: 100px 0 50px 0;
 }
 
@@ -69,8 +216,8 @@ footer .footerMain .leftFooter {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  align-self: flex-start;
   flex-direction: column;
+  align-self: flex-start;
 }
 
 footer .footerMain .leftFooter img {
@@ -86,6 +233,7 @@ footer .footerMain .leftFooter .appMarket {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: row;
 }
 
 footer .footerMain .leftFooter .appMarket a img {
@@ -97,8 +245,8 @@ footer .footerMain .rightFooter {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  align-self: flex-start;
   flex-direction: column;
+  align-self: flex-start;
   font-size: 23px;
 }
 
@@ -114,7 +262,7 @@ footer .footerMain .rightFooter ul li {
 footer .footerMain .rightFooter ul li a {
   font-size: 16px;
   font-weight: 400px;
-  color: white;
+  color: #efefef;
 }
 
 footer .footerMain .rightFooter ul li a:hover {
@@ -132,7 +280,7 @@ footer .footerMain .rightFooter .insta {
   -ms-border-radius: 40px;
   -o-border-radius: 40px;
   background: linear-gradient(90deg, #fe953f 9%, #ec4f6e 38%, #e5407c 61%, #6433c3 100%);
-  color: white;
+  color: #efefef;
 }
 
 footer .footerMain .centerFooter {
@@ -162,6 +310,7 @@ footer .copyRight {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: row;
   padding: 0 0 70px 0;
 }
 

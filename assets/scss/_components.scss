@@ -1,0 +1,11 @@
+@mixin heroBtn {
+    padding              : 10px auto;
+    border-radius        : 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius   : 40px;
+    -ms-border-radius    : 40px;
+    -o-border-radius     : 40px;
+    color                : $primeryColor;
+    background-color     : #F9622B;
+    text-align           : center;
+}
