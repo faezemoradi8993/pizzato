@@ -5,17 +5,15 @@ footer {
     color            : $primeryColor;
 
     .footerMain {
-        @include flex-aj(center, space-between);
+        @include flex-ajd(center, space-between, row);
         padding: 100px 0 50px 0;
 
 
 
 
         .leftFooter {
-            @include flex-aj(center, flex-end);
-            align-self    : flex-start;
-            flex-direction: column;
-
+            @include flex-ajd(center, flex-end, column);
+            align-self: flex-start;
 
             img {
                 width : 130px;
@@ -27,7 +25,7 @@ footer {
             }
 
             .appMarket {
-                @include flex-aj(center, center);
+                @include flex-ajd(center, center, row);
 
 
                 a {
@@ -42,10 +40,9 @@ footer {
         }
 
         .rightFooter {
-            @include flex-aj(flex-start, flex-start);
-            align-self    : flex-start;
-            flex-direction: column;
-            font-size     : 23px;
+            @include flex-ajd(flex-start, flex-start, column);
+            align-self: flex-start;
+            font-size : 23px;
 
 
 
@@ -88,11 +85,10 @@ footer {
         }
 
         .centerFooter {
-            @include flex-aj(flex-start, flex-start);
-            flex-direction: column;
-            align-self    : flex-start;
-            width         : 60%;
-            padding       : 0 40px;
+            @include flex-ajd(flex-start, flex-start, column);
+            align-self: flex-start;
+            width     : 60%;
+            padding   : 0 40px;
 
 
             p {
@@ -115,7 +111,7 @@ footer {
     }
 
     .copyRight {
-        @include flex-aj(center, center);
+        @include flex-ajd(center, center, row);
         padding: 0 0 70px 0;
 
         p {

@@ -1,5 +1,5 @@
 $borderColor   :rgba(255, 255, 255, 0.3);
-$primeryColor  :white;
+$primeryColor  :#efefef;
 $seconderyColor:#f9622B;
 
 
@@ -16,12 +16,14 @@ body {
     font-size  : 14px;
 }
 
-@mixin flex-aj($a, $b) {
+@mixin flex-ajd($a, $b, $c) {
     display        : flex;
     align-items    : $a;
     justify-content: $b;
+    flex-direction : $c;
 
 }
+
 
 .col2 {
     width: 16.66%;
@@ -40,8 +42,9 @@ body {
 }
 
 .container {
-    width : 90%;
-    margin: 0 auto;
+    max-width: 1100px;
+    width    : 90%;
+    margin   : 0 auto;
 }
 
 .line {
