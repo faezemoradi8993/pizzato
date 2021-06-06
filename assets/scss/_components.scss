@@ -16,3 +16,37 @@
   
   
 }
+.centerLable {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    @include flex-ajd(center, center, row);
+    h2 {
+      display: inline-block;
+      padding: 5px 33px;
+      font-size: 16px;
+      color: $primeryColor;
+      border: solid $seconderyColor 1px;
+      border-radius: 30px;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      -ms-border-radius: 30px;
+      -o-border-radius: 30px;
+      &::after {
+        content: "";
+        position: absolute;
+        border-bottom: solid 2px $seconderyColor;
+        width: calc(50% - 56px);
+        right: 0;
+        bottom: 50%;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        border-bottom: solid 2px $seconderyColor;
+        width: calc(50% - 56px);
+        left: 0;
+        bottom: 50%;
+      }
+    }
+  }

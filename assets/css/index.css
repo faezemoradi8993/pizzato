@@ -47,6 +47,56 @@ body {
   border-bottom: none !important;
 }
 
+.centerLable {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.centerLable h2 {
+  display: inline-block;
+  padding: 5px 33px;
+  font-size: 16px;
+  color: #efefef;
+  border: solid #f55115 1px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+.centerLable h2::after {
+  content: "";
+  position: absolute;
+  border-bottom: solid 2px #f55115;
+  width: calc(50% - 56px);
+  right: 0;
+  bottom: 50%;
+}
+
+.centerLable h2::before {
+  content: "";
+  position: absolute;
+  border-bottom: solid 2px #f55115;
+  width: calc(50% - 56px);
+  left: 0;
+  bottom: 50%;
+}
+
 @font-face {
   font-family: "iransans";
   src: url("../font/5c53f1a72f61b5b51e2ea79a22ebc38b.eot");
@@ -159,6 +209,7 @@ body {
   margin-right: 20px;
   text-decoration: none;
   color: #efefef;
+  z-index: 44;
 }
 
 .header nav .iconBar a:not(:last-child).active, .header nav .iconBar a:not(:last-child):hover {
@@ -319,7 +370,7 @@ body {
   top: 70px;
   position: absolute;
   bottom: -80px;
-  left: 0;
+  left: -20px;
   width: 803px;
   height: 520px;
   background-image: url("../images/home-slider-pizza-2.png");
@@ -473,56 +524,6 @@ body {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-}
-
-.match .matchLable {
-  position: relative;
-  width: 100%;
-  height: 80px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.match .matchLable h2 {
-  display: inline-block;
-  padding: 5px 33px;
-  font-size: 16px;
-  color: #efefef;
-  border: solid #f55115 1px;
-  border-radius: 30px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
-  -o-border-radius: 30px;
-}
-
-.match .matchLable h2::after {
-  content: "";
-  position: absolute;
-  border-bottom: solid 2px #f55115;
-  width: calc(50% - 56px);
-  right: 0;
-  bottom: 50%;
-}
-
-.match .matchLable h2::before {
-  content: "";
-  position: absolute;
-  border-bottom: solid 2px #f55115;
-  width: calc(50% - 56px);
-  left: 0;
-  bottom: 50%;
 }
 
 .match .matchContainer {
