@@ -100,7 +100,7 @@ footer {
                         color: $seconderyColor;
 
                         &:hover {
-                            color: #ffd500;
+                            color: $primeryColorHover;
                         }
                     }
                 }
@@ -120,7 +120,7 @@ footer {
                     color: $seconderyColor;
 
                     &:hover {
-                        color: #ffd500;
+                        color: $primeryColorHover;
                     }
                 }
             }

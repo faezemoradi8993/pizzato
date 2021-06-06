@@ -1,6 +1,10 @@
 $borderColor   :rgba(255, 255, 255, 0.3);
 $primeryColor  :#efefef;
-$seconderyColor:#f9622B;
+$primeryColorHover :#ffd500;
+$seconderyColor:#f55115;
+$seconderyColorHover:#f3774a;
+$mainBackColor:#232325;
+
 
 
 * {
@@ -14,6 +18,8 @@ body {
     direction  : rtl;
     font-family: 'iransans';
     font-size  : 14px;
+    background-color: $mainBackColor;
+    overflow-x: hidden;
 }
 
 @mixin flex-ajd($a, $b, $c) {

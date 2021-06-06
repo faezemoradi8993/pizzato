@@ -1,0 +1,74 @@
+.match {
+  .matchLable {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    @include flex-ajd(center, center, row);
+    h2 {
+      display: inline-block;
+      padding: 5px 33px;
+      font-size: 16px;
+      color: $primeryColor;
+      border: solid $seconderyColor 1px;
+      border-radius: 30px;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      -ms-border-radius: 30px;
+      -o-border-radius: 30px;
+      &::after {
+        content: "";
+        position: absolute;
+        border-bottom: solid 2px $seconderyColor;
+        width: calc(50% - 56px);
+        right: 0;
+        bottom: 50%;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        border-bottom: solid 2px $seconderyColor;
+        width: calc(50% - 56px);
+        left: 0;
+        bottom: 50%;
+      }
+    }
+  }
+  .matchContainer {
+    background-image: url("../images/Home-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    @include flex-ajd(flex-start, center, row);
+    .container {
+      position: relative;
+      padding-top: 50px;
+      
+      @include flex-ajd(center, space-between, row);
+      .matchContent {
+        @include flex-ajd(center, space-between, row);
+        padding: 30px 40px;
+        p {
+          color: $primeryColor;
+        }
+        a {
+          @include heroBtn;
+          min-width: 100px;
+          margin: 40px;
+        }
+      }
+      .chef {
+       z-index: 2;
+        }
+        .chefLine{
+        
+              
+                position: absolute;
+                width: 100%;
+                bottom: -40px;
+          
+        }
+     
+
+    }
+  }
+}

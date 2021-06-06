@@ -1,0 +1,42 @@
+.appStore {
+  height: 600px;
+  @include flex-ajd(center, center, column);
+
+  .appstoreContainer {
+    width: 100%;
+    .desc {
+      width: 100%;
+      background-color: rgb(70 ,65, 65);
+      padding: 20px 0;
+      .container{
+          position: relative;
+        color: $primeryColor;
+        h1 {
+            padding-bottom: 15px;
+        }
+        p {
+        }
+        img{
+            position: absolute;
+            left: 15px;
+            width: 190px;
+            top: -152px;
+        }
+      }
+       
+      
+    }
+    .stores {
+    
+      .container{
+          @include flex-ajd(center,flex-start, row);
+          padding: 20px 0;
+          
+        img {
+        width: 150px;
+        margin-left: 20px;
+      }}
+      
+    }
+  }
+}

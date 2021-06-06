@@ -1,0 +1,73 @@
+.cards {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  box-shadow:  0 6px 6px 0 rgba(black , 0.4);
+  position: relative;
+  &::before {
+    content: "";
+    left: -140px;
+    position: absolute;
+    bottom: 74px;
+    background-image: url("../images/what-we-do-right.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 396px;
+    height: 355px;
+  }
+  &::after {
+    content: "";
+    right: -23px;
+    position: absolute;
+    bottom: 46px;
+    background-image: url("../images/what-we-do-left.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 334px;
+    height: 352px;
+  }
+  .container {
+    @include flex-ajd(center, center, row);
+    .circleCard {
+      position: relative;
+      z-index: 1;
+      // border-radius: 50%;
+      width: 270px;
+      height: 270px;
+     
+      text-align: center;
+      @include flex-ajd(center, center, column);
+      padding: 30px 30px;
+      .content {
+        img {
+          width: 70px;
+          height: 70px;
+        }
+        h4 {
+          color: $primeryColorHover;
+          margin-bottom: 10px;
+          margin-top: 8px;
+        }
+        p {
+          color: $primeryColor;
+          font-size: 11px;
+        }
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        width: 270px;
+        height: 270px;
+        top: 0;
+        right: 0;
+     
+        border: solid 1px $primeryColor;
+        opacity: 0.5;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+}
+    }
+  }
+}
