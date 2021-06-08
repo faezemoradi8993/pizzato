@@ -1,7 +1,7 @@
 .cards {
   padding-top: 80px;
   padding-bottom: 80px;
-  box-shadow:  0 6px 6px 0 rgba(black , 0.4);
+  box-shadow: 0 6px 6px 0 rgba(black, 0.4);
   position: relative;
   &::before {
     content: "";
@@ -26,21 +26,21 @@
     height: 352px;
   }
   .container {
-    @include flex-ajd(center, center, row);
+    @include flex-ajd(center, space-between, row);
     .circleCard {
       position: relative;
       z-index: 1;
-      // border-radius: 50%;
-      width: 270px;
-      height: 270px;
-     
+      border-radius: 50%;
+      border: solid 1px $primeryColor;
+      width: 250px;
+      height: 250px;
       text-align: center;
       @include flex-ajd(center, center, column);
       padding: 30px 30px;
       .content {
         img {
-          width: 70px;
-          height: 70px;
+          width: 65px;
+          // height: 70px;
         }
         h4 {
           color: $primeryColorHover;
@@ -52,22 +52,17 @@
           font-size: 11px;
         }
       }
-      &::before {
-        content: "";
-        position: absolute;
-        width: 270px;
-        height: 270px;
-        top: 0;
-        right: 0;
-     
-        border: solid 1px $primeryColor;
-        opacity: 0.5;
-        border-radius: 50%;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        -ms-border-radius: 50%;
-        -o-border-radius: 50%;
+    }
+  }
 }
+@media screen and (max-width:1123px){
+  .cards{
+    .container{
+      flex-wrap: wrap;
+     justify-content: center;
+     .circleCard{
+       margin: 5px;
+     }
     }
   }
 }

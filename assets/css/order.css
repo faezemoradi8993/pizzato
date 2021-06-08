@@ -1,3 +1,26 @@
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px grey;
+          box-shadow: inset 0 0 5px grey;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f55115;
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #f3774a;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +31,7 @@
 
 body {
   direction: rtl;
-  font-family: 'iransans';
+  font-family: "iransans";
   font-size: 14px;
   background-color: #232325;
   overflow-x: hidden;
@@ -97,6 +120,53 @@ body {
   bottom: 50%;
 }
 
+.basket {
+  background-color: rgba(239, 239, 239, 0.7);
+  color: #232325;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  position: relative;
+}
+
+.basket:hover {
+  background-color: #9c9999;
+  -webkit-box-shadow: 0px 3px 7px #00000099;
+          box-shadow: 0px 3px 7px #00000099;
+}
+
+.basket .bodget {
+  position: absolute;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  top: 0px;
+  right: 5px;
+  background-color: #f55115;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-box-shadow: 0px 3px 7px #00000099;
+          box-shadow: 0px 3px 7px #00000099;
+}
+
+.basket .shop {
+  padding: 11px 25px;
+}
+
+.basket i {
+  font-size: 18px;
+}
+
 @font-face {
   font-family: "iransans";
   src: url("../font/5c53f1a72f61b5b51e2ea79a22ebc38b.eot");
@@ -120,7 +190,6 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  height: 250px;
   background-image: url("../images/Home-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -209,46 +278,85 @@ body {
 }
 
 .header nav .iconBar a.basket {
-  background-color: rgba(239, 239, 239, 0.7);
-  color: #1f1c1c;
-  border-radius: 30px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
-  -o-border-radius: 30px;
-  transition: all 0.4s;
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  -ms-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  position: relative;
+  color: #232325;
 }
 
-.header nav .iconBar a.basket:hover {
-  background-color: #9c9999;
-  -webkit-box-shadow: 0px 3px 7px #00000099;
-          box-shadow: 0px 3px 7px #00000099;
+.header .underHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-bottom: 20px;
 }
 
-.header nav .iconBar a.basket .bodget {
-  position: absolute;
-  text-align: center;
-  width: 20px;
-  height: 20px;
-  top: 0px;
-  right: 5px;
+.header .underHeader .heroBtn {
+  color: #efefef;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
   background-color: #f55115;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+  text-align: center;
+  font-size: 14px;
+  word-break: break-all;
+  min-width: 100%;
+  height: 43px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-shadow: 0px 3px 7px #00000099;
           box-shadow: 0px 3px 7px #00000099;
+  min-width: 150px;
 }
 
-.header nav .iconBar a.basket .shop {
-  padding: 11px 25px;
+.header .underHeader img {
+  width: 100px;
+  height: 110px;
+}
+
+.typeMenu {
+  background-color: #f55115;
+}
+
+.typeMenu ul {
+  color: #efefef;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.typeMenu ul li a {
+  display: inline-block;
 }
 
 footer {

@@ -50,3 +50,44 @@
       }
     }
   }
+  .basket {
+    background-color:
+    rgba($primeryColor,0.7);
+    color: $mainBackColor;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    position: relative;
+    &:hover {
+      background-color: rgb(156, 153, 153);
+      box-shadow: 0px 3px 7px #00000099;
+    }
+    .bodget {
+      position: absolute;
+      text-align: center;
+      width: 20px;
+      height: 20px;
+      top: 0px;
+      right: 5px;
+      background-color: $seconderyColor;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      box-shadow: 0px 3px 7px #00000099;
+    }
+    .shop {
+      padding: 11px 25px;
+    }
+    i{
+      font-size: 18px;
+    }
+  }

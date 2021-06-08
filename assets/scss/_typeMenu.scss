@@ -1,0 +1,12 @@
+.typeMenu {
+    background-color: $seconderyColor;
+  ul {
+      color: $primeryColor;
+      @include flex-ajd(center , space-between ,row);
+    li {
+      a {
+        display: inline-block;
+      }
+    }
+  }
+}
